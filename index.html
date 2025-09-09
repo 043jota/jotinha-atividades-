@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html Lang="pt-br"
+<html Lang="pt-br">
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"
-/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simulador de Desconto e Parcelamento</title>
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -49,16 +48,38 @@ required />
         <section class="resultados" id="resultados" hidden>
             <h2>Resultados</h2>
             <ul>
-                <li><strong>Preço com desconto:</strong> <span
- id="precoComDesconto">—</span></li>
+                <li><strong>Preço com desconto:</strong> <span 
+id="precoComDesconto">—</span></li> 
                 <li><strong>Valor da parcela:</strong> <span
-
-                id="valorParcela">—</span></li>
-
+id="valorParcela">—</span></li>
                 <li><strong>Total a pagar:</strong> <span
-
-                id="totalPagar">—</span></li>
-
+id="totalPagar">—</span></li>   
                 <li><strong>Economia com desconto:</strong> <span
+id="economia">—</span></li>
+            </ul>
+        </section>
 
-                id="economia">—</span></li>
+
+        <section id="tabelaSecao" hidden>   
+            <h2>Tabela de Parcelas (Juros Simples)</h2>
+            <table id="tabela">
+                <thead> 
+                    <tr>        
+                        <th>Mês</th>
+                        <th>Parcela (R$)</th>
+                        <th>Juros do mês (R$)</th>
+                        <th>Amortização (R$)</th>
+                        <th>Principal restante (R$)</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
